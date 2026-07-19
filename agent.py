@@ -21,7 +21,7 @@ def create_research_agent():
     gemini_key, tavily_key = get_api_keys()
 
     llm = ChatGoogleGenerativeAI(
-        model="gemini-3-flash-preview",
+        model="gemini-3.1-flash-lite",
         google_api_key=gemini_key,
         temperature=0.3
     )
